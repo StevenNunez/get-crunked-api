@@ -5,4 +5,6 @@ Rails.application.routes.draw do
       resources :proportions, except: [:new, :edit]
     end
   end
+
+  post "/users/sign_in", to: "sessions#create"
 end
